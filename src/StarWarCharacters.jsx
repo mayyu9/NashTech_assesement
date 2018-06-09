@@ -54,16 +54,16 @@ class StarWarCharacter extends React.Component {
       selectedList = char.map( (data,i) => {
         if(data.name === sValue)
           return(<ul key = {i}>
-            <li>{ data.name }</li>
-            <li>{ data.hair_color }</li>
-            <li>{ data.skin_color }</li>
-            <li>{ data.eye_color }</li>
-            <li>{ data.gender }</li>
-            <li><a href={data.homeworld}>{ data.homeworld }</a></li>
-            <li><a href={data.species}>{ data.species }</a></li>
-            <li><a href={data.url}>{ data.url }</a></li>
+            <li>name: { data.name }</li>
+            <li>hair color: { data.hair_color }</li>
+            <li>skin color: { data.skin_color }</li>
+            <li>eye color: { data.eye_color }</li>
+            <li>gender: { data.gender }</li>
+            <li> home world: <a href={data.homeworld}>{ data.homeworld }</a></li>
+            <li>species: <a href={data.species}>{ data.species }</a></li>
+            <li>URL: <a href={data.url}>{ data.url }</a></li>
             </ul>)
-        
+
       });
     }
 
